@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belinda Abubakar | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#222;
+      line-height:1.7;
+    }
+
+    header{
+      background:linear-gradient(135deg,#4b6cb7,#182848);
+      color:white;
+      padding:60px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      max-width:600px;
+    }
+
+    .hero-text h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    .hero-text p{
+      font-size:1.1rem;
+      margin-top:15px;
+    }
+
+    .image-box{
+      width:260px;
+      height:300px;
+      border:4px unset rgb(255, 255, 255);
+      border-radius:5px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-top:20px;
+      background:rgba(255,255,255,0.1);
+      text-align:center;
+
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:25px;
+      color:#182848;
+      position:relative;
+    }
+
+    h2::after{
+      content:"";
+      width:70px;
+      height:4px;
+      background:#4b6cb7;
+      position:absolute;
+      left:0;
+      bottom:-10px;
+      border-radius:5px;
+    }
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#4b6cb7;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .offer-box{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .journey, .goals{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
+      margin-top:20px;
+    }
+
+    .contact{
+      background:#182848;
+      color:white;
+      border-radius:20px;
+      padding:40px;
+      text-align:center;
+    }
+
+    .contact p{
+      margin:15px 0;
+      font-size:1.1rem;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111;
+      color:white;
+      font-size:0.9rem;
+    }
+
+    @media(max-width:768px){
+      header{
+        text-align:center;
+        justify-content:center;
+      }
+
+      .hero-text h1{
+        font-size:2.2rem;
+      }
+
+      .image-box{
+        margin-top:40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <div class="hero-text">
+      <h1>Belinda Abubakar</h1>
+      <h3>Aspiring Web Developer & Tech Enthusiast</h3>
+
+      <p>
+        Hi, I’m Belinda Abubakar — an aspiring web developer,
+        university student, and tech enthusiast passionate about
+        creating meaningful digital experiences.
+      </p>
+
+      <p>
+        Currently participating in the Koder Xperience 26’
+        and the Erudite Africa Network Internship Program,
+        where I’m building practical skills in web development,
+        teamwork, and digital innovation.
+      </p>
+    </div>
+
+    <!-- INSERT IMAGE HERE -->
+    <div class="image-box">
+       <img src="belinda.jpg" alt="Belinda Abubakar" style="border-radius:5px; width:260px; height:300px; "
+       title="Belinda">
+    </div>
+  </header>
+
+  <!-- SKILLS SECTION -->
+  <section>
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="card">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Basic JavaScript</li>
+          <li>Responsive Web Design</li>
+          <li>Website Structure & Layout</li>
+          <li>Basic UI/UX Principles</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Problem Solving</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT I CAN OFFER -->
+  <section>
+    <h2>What I Can Offer</h2>
+
+    <div class="offer-box">
+      <ul>
+        <li>Clean and beginner-friendly website designs</li>
+        <li>Dedication to learning and improvement</li>
+        <li>Creativity and attention to detail</li>
+        <li>A positive attitude toward teamwork and projects</li>
+        <li>Willingness to take on challenges and grow professionally</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- JOURNEY SECTION -->
+  <section>
+    <h2>My Journey / Internship Experience</h2>
+
+    <div class="journey">
+      <p>
+        My current journey in tech started through the
+        Erudite Africa Network Internship Program and
+        Koder Xperience 26’. These experiences have exposed
+        me to the fundamentals of web development, digital tools,
+        and real-world project collaboration.
+      </p>
+
+      <br>
+
+      <p>
+        I am continuously improving my skills while building
+        confidence in creating websites and digital solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- GOALS SECTION -->
+  <section>
+    <h2>Future Goals</h2>
+
+    <div class="goals">
+      <p>
+        My goal is to become a skilled web developer capable
+        of building responsive and user-friendly websites
+        that solve real problems.
+      </p>
+
+      <br>
+
+      <p>
+        I also hope to expand my knowledge in UI/UX design,
+        frontend development, and modern web technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact">
+      <h2 style="color:white;">Contact Me</h2>
+
+      <p><strong>Email:</strong> abubakarbelinda7@gmail.com</p>
+      <p><strong>Contact:</strong> 0508587426</p>
+      <p><strong>WhatsApp:</strong> 0595303546</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Belinda Abubakar | Portfolio Website
+  </footer>
+
+</body>
+</html>
